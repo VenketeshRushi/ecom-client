@@ -11,6 +11,7 @@ import {
   MenuItem,
   MenuList,
   Divider,
+  useToast,
 } from "@chakra-ui/react";
 import {
   RiAdminFill,
@@ -36,20 +37,22 @@ import { removeItem } from "../utils/cookiestorage";
 import { logoutApi } from "../redux/Reducers/authReducer";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { setToast } from "../utils/extraFunctions";
 
 export const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { token } = useSelector((state) => state.auth);
+  const { token, isAdmin } = useSelector((state) => state.auth);
   const { orderSummary } = useSelector((state) => state.cart) || 0;
   const user = useSelector((state) => state.auth.user) || "Test";
   const dispatch = useDispatch();
+  const toast = useToast();
 
   const [isLargerThan420] = useMediaQuery("(min-width: 420px)");
   const [isLargerThan780] = useMediaQuery("(min-width: 780px)");
   const [isLargerThan768] = useMediaQuery("(max-width: 995px)");
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   const handleLogoutBtn = () => {
     removeItem("token");
@@ -58,9 +61,16 @@ export const Navbar = () => {
     removeItem("persist:root");
     navigate("/");
   };
+
+  const handleAdmin = () => {
+    if (isAdmin === false) {
+      return setToast(toast, "You are not logged in as an admin.Please log in as an admin. Admin Email: admin@gmail.com , Admin Password: admin", "info");
+    }
+    navigate("/admindashboard");
+  }
   return (
     <>
-      <Flex h={"80px"} py="1"flexDirection={"row"} px={"20px"}>
+      <Flex h={"80px"} py="1" flexDirection={"row"} px={"20px"}>
         {!isLargerThan768 && (
           <Box w={"80px"}>
             <Link to={"/"}>
@@ -254,9 +264,7 @@ export const Navbar = () => {
                     </MenuItem>
                     <Divider />
                     <MenuItem
-                      onClick={() => {
-                        navigate("/admindashboard");
-                      }}
+                      onClick={handleAdmin}
                       icon={<RiAdminFill />}
                     >
                       Admin Dashboard
