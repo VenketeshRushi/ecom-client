@@ -45,7 +45,7 @@ export const Summary = ({
 
           <OrderPageText
             name={"Subtotal"}
-            value={`₹${(subTotal)}.00`}
+            value={`USD ${(subTotal)}.00`}
           />
 
           <OrderPageText name={"Quantity"} value={quantity} />
@@ -53,23 +53,23 @@ export const Summary = ({
           <Flex justifyContent={"space-between"}>
             <Text>Estimated Delivery</Text>
             <Text
-              title={"Free delivery applies to orders of ₹14,000 or more"}
+              title={"Free delivery applies to orders of USD 14,000 or more"}
               cursor={"pointer"}
             >
-              ₹{(shipping)}.00
+              USD {(shipping)}.00
             </Text>
           </Flex>
 
           <OrderPageText
             name={"Discount"}
-            value={`₹${(discount)}.00`}
+            value={`USD ${(discount)}.00`}
           />
 
           <Divider my={"10px"} />
 
           <OrderPageText
             name={"Total"}
-            value={`₹${(total)}.00`}
+            value={`USD ${(total)}.00`}
           />
         </Flex>
       </Box>

@@ -1,4 +1,4 @@
-import nikeLogo from "../assets/Nike-logo.png";
+import nikeLogo from "../assets/Andy.png";
 import nikeLogoPayment from "../assets/nikeLogoPayment.png";
 import homeImage from "../assets/home.webp";
 

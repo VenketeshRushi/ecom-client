@@ -90,6 +90,7 @@ export const Navbar = () => {
           <Category name={"men"} text={"MEN"} link={"/men"} />
           <Category name={"women"} text={"WOMEN"} link={"/women"} />
           <Category name={"kids"} text={"KIDS"} link={"/kids"} />
+          <Category name={"isearch"} text={"IRECOMM"} link={"https://huggingface.co/spaces/Dat1Tran/demo_shoe_recommendation"} />
         </Box>
 
         <Spacer />

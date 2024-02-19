@@ -101,13 +101,13 @@ function Profile({ userProfile, setUserProfile, selectedProfile, setSelectedProf
           fontSize="xl"
           color={useColorModeValue("brand.dark", "brand.light")}
         >
-          Venketesh Rushi
+          Dat Tran
         </Heading>
         <Text
           color={useColorModeValue("brand.gray", "brand.light")}
           fontSize="sm"
         >
-          {"Pune, India"}
+          {"Ho Chi Minh, Viet Nam"}
         </Text>
       </VStack>
     </VStack>

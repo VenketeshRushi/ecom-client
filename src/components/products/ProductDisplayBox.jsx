@@ -55,7 +55,7 @@ export const ProductDisplayBox = ({
           <DescText>
             {gender}, {color} Colour
           </DescText>
-          <PriceText>₹{numberWithCommas(price)}.00</PriceText>
+          <PriceText>USD {numberWithCommas(price)}.00</PriceText>
         </Box>
       </Flex>
     </>

@@ -11,7 +11,7 @@ export const OrderBox = ({ img, title, price, quantity }) => {
             <Center>
                 <Box px={'20px'} w={'100%'} >
                     <Text fontWeight={600}>{shortString(title)}</Text>
-                    <Text>Price: ₹ {numberWithCommas(price)}</Text>
+                    <Text>Price: USD  {numberWithCommas(price)}</Text>
                     <Text>Quantity: {quantity}</Text>
                 </Box>
             </Center>

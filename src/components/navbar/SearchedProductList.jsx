@@ -64,7 +64,7 @@ export default function SearchedProductList({
               fontWeight="400"
               me="14px"
             >
-              ₹ {numberWithCommas(price)}
+              USD  {numberWithCommas(price)}
             </Text>
             <Text
               color="secondaryGray.600"

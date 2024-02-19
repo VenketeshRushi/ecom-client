@@ -1,4 +1,4 @@
-<h1 align="center">Nike Clone</h1>
+<h1 align="center">ANDY SHOES</h1>
 
 <h3 align="center">It's a MERN Stack E-commerce web application with all the major functionalities.</h3>
 
@@ -44,8 +44,7 @@
 
 <h3 align="center"><a href="https://ecom-client-five.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
-
-Nike Clone is a MERN Stack e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, Just visit the product listing page and you will see all the products, Apply filters as per your need, and in just a few clicks you can buy any product from the website. This project is just for educational purposes.
+Andy Shoes is a MERN Stack e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, Just visit the product listing page and you will see all the products, Apply filters as per your need, and in just a few clicks you can buy any product from the website. This project is just for educational purposes.
 
 
 <br />

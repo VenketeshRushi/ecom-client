@@ -59,7 +59,7 @@ export const FavouriteItemBox = ({
             justifyContent={"space-between"}
           >
             <Text>{shortString(title)}</Text>
-            <Text>₹{numberWithCommas(price)}</Text>
+            <Text>USD {numberWithCommas(price)}</Text>
           </Flex>
           <Text
             fontSize={["12px", "12px", "15px", "15px", "17px"]}

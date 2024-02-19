@@ -197,7 +197,7 @@ function Description() {
         <Text fontSize={"29px"}>{data?.title}</Text>
         <Text>{data?.description}</Text>
         <Text fontSize={"22px"} mt="20px">
-          ₹ {numberWithCommas(+data?.price)}
+          USD  {numberWithCommas(+data?.price)}
         </Text>
         <Text color={"gray"}>incl. of taxes and duties</Text>
         <Text fontSize={"18px"} mt={"30px"} mb={"10px"}>

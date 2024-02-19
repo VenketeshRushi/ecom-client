@@ -38,7 +38,7 @@ export const ClothSection = () => {
         textAlign={"center"}
         fontWeight={"bolder"}
       >
-        <HomeText>Nike Unleash Your Potential</HomeText>
+        <HomeText>A.S Unleash Your Potential</HomeText>
         {/* <HomeDescText>{description}</HomeDescText> */}
 
         <Grid

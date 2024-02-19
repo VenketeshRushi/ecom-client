@@ -92,7 +92,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}
                       >
-                        +91-xxxxxxxxxx
+                        +84-9090252822
                       </Button>
                       <Button
                         size="md"
@@ -103,7 +103,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
                       >
-                        xxx@gmail.com
+                        AndyShoes@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -114,7 +114,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                       >
-                        Pune, India
+                        Ho Chi Minh, Viet Nam
                       </Button>
                     </VStack>
                   </Box>

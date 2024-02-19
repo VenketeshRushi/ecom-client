@@ -86,7 +86,7 @@ export default function Allorders() {
                       <Center>
                         <Box textAlign={"left"} px={"20px"} w={"100%"}>
                           <Text fontWeight={600}>{product.title}</Text>
-                          <Text>Price: ₹ {product.price}</Text>
+                          <Text>Price: USD  {product.price}</Text>
                           <Text>Quantity: {product.quantity}</Text>
                         </Box>
                       </Center>
